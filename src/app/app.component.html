@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+
+<dx-list [dataSource]="dataSource">
+    <div *dxTemplate="let user of 'item'" (click)="onSelect(user)">
+        <span><b>{{user.name}}:</b></span> 
+        {{user.address.city}}, {{user.address.street}}, {{user.address.suite}}
+    </div>
+</dx-list>
+<user-detail [user]="selectedUser"></user-detail>
