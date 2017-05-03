@@ -4,6 +4,8 @@
 # System Files
 *.js
 *.map
+
+# Tests
 !karma.conf.js
 !karma-test-shim.js
-!protractor.config.js
+!testcafe/*
