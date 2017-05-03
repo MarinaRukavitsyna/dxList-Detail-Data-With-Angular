@@ -1,8 +1,8 @@
 <h1>{{title}}</h1>
 
-<dx-list [dataSource]="dataSource">
+<dx-list id="lst" [dataSource]="users">
     <div *dxTemplate="let user of 'item'" (click)="onSelect(user)">
-        <span><b>{{user.name}}:</b></span> 
+        <span><b>{{user.name}}:</b></span>
         {{user.address.city}}, {{user.address.street}}, {{user.address.suite}}
     </div>
 </dx-list>

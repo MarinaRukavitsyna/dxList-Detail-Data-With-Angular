@@ -1,14 +1,15 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent }  from './app.component';
-import { UserDetailComponent } from './user-detail.component';
-import { Service } from './app.service';
+import { UserDetailComponent } from './components/user-detail.component';
 import { DxListModule, DxTemplateModule, DxDataGridModule } from 'devextreme-angular';
 
 @NgModule({
   imports: [
     BrowserModule,
+    HttpModule,
     DxListModule,
     DxTemplateModule,
     DxDataGridModule
@@ -17,7 +18,7 @@ import { DxListModule, DxTemplateModule, DxDataGridModule } from 'devextreme-ang
     AppComponent,
     UserDetailComponent
   ],
-  providers: [Service],
+  providers: [],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

@@ -4,10 +4,10 @@
         id="gridContainer"
         [dataSource]="getAlbumDataSource(user.id)">
         <dxo-load-panel [enabled]="false"></dxo-load-panel>
-        <dxi-column dataField="id"></dxi-column>
+        <dxi-column dataField="id" width="50px"></dxi-column>
         <dxi-column dataField="title"></dxi-column>
         <dxo-paging [pageSize]="5"></dxo-paging>
-    </dx-data-grid>
+    </dx-data-grid> 
 
     <h2><b>{{user.name}}'s photos</b></h2>
     <dx-data-grid 
@@ -16,7 +16,7 @@
         height="500px">
         <dxo-load-panel [enabled]="true"></dxo-load-panel>
         <dxo-scrolling mode="virtual"></dxo-scrolling>
-        <dxi-column dataField="id"></dxi-column>
+        <dxi-column dataField="id" width="50px"></dxi-column>
         <dxi-column dataField="title"></dxi-column>
         <dxi-column dataField="url"></dxi-column>
         <dxi-column dataField="thumbnailUrl"></dxi-column>
